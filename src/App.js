@@ -9,7 +9,11 @@ import {
 function App() {
   let theme = createTheme();
   theme = responsiveFontSizes(theme);
-  return <div className="App"></div>;
+  return (
+    <ThemeProvider theme={theme}>
+      <div className="App"></div>
+    </ThemeProvider>
+  );
 }
 
 export default App;
